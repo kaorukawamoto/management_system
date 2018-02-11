@@ -1,3 +1,34 @@
 @charset "utf-8";
 
 /*common*/
+
+/*color*/
+$color_glay01:#E7E7E7;
+$color_glay02:#E7E7E7;
+$color_glay03:#EFF3F6;
+$color_glay04:#6F8294;
+$color_glay05:#6F8294;
+$color_glay06:#EFF3F6;
+$color_navy:#001125;
+$color_glay07:#E9EBED;
+$color_glay08:#C6C8CC;
+$color_glay09:#A6B7C7;
+$color_red:#D8807C;
+$color_lgreen:#A4C686;
+$color_green:#73AE9D;
+$color_blue:#86A0CA;
+$color_yellow:#FFEC38;
+
+/*body*/
+html{
+	height:100%;
+}
+body{
+	position: relative;
+	width:100%;
+	height:100%;
+	margin:0;
+	overflow:auto;
+	clear:both;
+}
+
