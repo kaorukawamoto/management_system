@@ -74,6 +74,8 @@ input, button, textarea, select {
   -moz-appearance: none;
   appearance: none;
   outline: none;
+  border:none;
+  background-color:inherit;
 }
 /*searchリセット*/
 input[type="search"] {
