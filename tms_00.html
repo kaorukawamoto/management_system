@@ -8,12 +8,6 @@
 <meta name="description" content="">
 <meta name="keywords" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<!--Bootstrap4導入用-->
-<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script> -->
-<!--Bootstrap4導入用-->
 <!--jQuery-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 <!--jQuery-->
@@ -23,16 +17,26 @@
 
 	<body>
 		<div class="top-bg">
-			<h1><img src="./img/logo.png" alt="FanForward"></h1>
-			<p>Tichet Management System</p>
-			<form method="post" action="">
-				<p>Email Address</p>
-				<input type="text" name="email">
-				<p>Password</p>
-				<input type="text" name="password">
-				<p><input type="submit" value="ログイン"></p>
-			</form>
-			<a href="/" target="_self">パスワードまたはユーザーネームをお忘れですか？</a>
+			<div class="inner">
+				<h1 class="logo"></h1>
+				<p>Tichet Management System</p>
+				<div class="postform">
+					<form method="post" action="">
+						<p>Email Address</p>
+						<div class="input">
+							<input type="text" name="email" value="" placeholder="ex.nori.san@gmail.com">
+						</div>
+						<p>Password</p>
+						<div class="input">
+							<input type="text" name="password" value="" placeholder="type password">
+						</div>
+						<div class="loginbtn">
+							<input type="submit" value="ログイン">
+						</div>
+					</form>
+				</div>
+				<a href="/" target="_self" class="passQuestion">パスワードまたはユーザーネームをお忘れですか？</a>
+			</div>
 		</div>
 	</body>
 

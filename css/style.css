@@ -85,7 +85,9 @@ input, button, textarea, select {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  outline: none; }
+  outline: none;
+  border: none;
+  background-color: inherit; }
 
 /*searchリセット*/
 input[type="search"] {
@@ -104,6 +106,75 @@ input[type="search"]::-webkit-search-decoration {
   display: inline-block; }
 
 /*toppage css*/
+.top-bg {
+  color: #fff;
+  background-image: url("../img/tms00/back.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  text-align: center;
+  position: relative; }
+  .top-bg .inner {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 453px;
+    height: 400px; }
+    .top-bg .inner .logo {
+      background-image: url("../img/logo_ff.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center top;
+      width: inherit;
+      height: 70px;
+      margin-bottom: 1rem; }
+    .top-bg .inner .postform {
+      width: 295px;
+      margin: 4rem auto 0 auto; }
+      .top-bg .inner .postform p {
+        font-size: 14px;
+        text-align: left;
+        margin-bottom: 0.5rem; }
+      .top-bg .inner .postform .input {
+        display: block;
+        background-color: #fff;
+        border-radius: 3px;
+        width: 280px;
+        height: 21px;
+        margin-bottom: 1rem;
+        padding: 0.2rem 0.5rem;
+        text-align: left; }
+    .top-bg .inner .loginbtn input {
+      background-color: #005E8A;
+      width: 256px;
+      height: 40px;
+      color: #fff;
+      border-radius: 24px;
+      margin: 0 auto 1rem auto;
+      line-height: 40px;
+      color: #fff;
+      color: #fff;
+      font-size: 14px; }
+      .top-bg .inner .loginbtn input:hover {
+        cursor: pointer;
+        background-color: #fff;
+        color: #005E8A;
+        font-weight: bold; }
+  .top-bg p {
+    font-size: 16px; }
+  .top-bg .passQuestion {
+    text-decoration: none;
+    color: #005E8A;
+    font-size: 12px; }
+    .top-bg .passQuestion:hover {
+      color: #fff; }
+
 /*tms01page css*/
 /*accordion開閉用*/
 #acMenu dt {
