@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="UTF-8">
+<title></title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--jQuery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<!--jQuery-->
+<link rel="stylesheet" href="css/style.css">
+<link rel="shortcut icon" href="">
+</head>
+
+<body>
+
+	<div class="nav">
+		<div class="logoWrap">
+			<h1></h1>
+			<p>Tichet Management</p>
+		</div>
+		<ul class="accordion">
+			<li>
+				<dl id="acMenu">
+					<dt>イベント編集</dt>
+					<dd class="accordion__list">
+						<ul>
+							<li><a href="">お知らせ</a></li>
+							<li><a href="">チーム</a></li>
+							<li><a href="">シリーズ</a></li>
+							<li><a href="">会場/スタジアムマスタ</a></li>
+							<li><a href="">座席/チケットタイプ</a></li>
+							<li><a href="">座席/価格管理</a></li>
+							<li><a href="">顧客管理</a></li>
+							<li><a href="">履歴</a></li>
+						</ul>
+					</dd>
+				</dl>
+			</li>
+			<li>
+				<dl id="acMenu">
+					<dt>イベントスケジュール</dt>
+					<dd class="accordion__list">
+						<ul>
+							<li><a href="">項目</a></li>
+							<li><a href="">項目</a></li>
+							<li><a href="">項目</a></li>
+							<li><a href="">項目</a></li>
+							<li><a href="">項目</a></li>
+							<li><a href="">項目</a></li>
+							<li><a href="">項目</a></li>
+							<li><a href="">項目</a></li>
+						</ul>
+					</dd>
+				</dl>
+			</li>
+			<li>
+				<dl id="acMenu">
+					<dt>金額設定</dt>
+					<dd class="accordion__list">
+						<ul>
+							<li><a href="">項目</a></li>
+							<li><a href="">項目</a></li>
+							<li><a href="">項目</a></li>
+							<li><a href="">項目</a></li>
+							<li><a href="">項目</a></li>
+							<li><a href="">項目</a></li>
+							<li><a href="">項目</a></li>
+							<li><a href="">項目</a></li>
+						</ul>
+					</dd>
+				</dl>
+			</li>
+			<li>
+				<dl id="acMenu">
+					<dt>席情報</dt>
+					<dd class="accordion__list">
+						<ul>
+							<li><a href="">項目</a></li>
+							<li><a href="">項目</a></li>
+							<li><a href="">項目</a></li>
+							<li><a href="">項目</a></li>
+							<li><a href="">項目</a></li>
+							<li><a href="">項目</a></li>
+							<li><a href="">項目</a></li>
+							<li><a href="">項目</a></li>
+						</ul>
+					</dd>
+				</dl>
+			</li>
+			<li>
+				<dl id="acMenu">
+					<dt>レポート</dt>
+					<dd class="accordion__list">
+						<ul>
+							<li><a href="">項目</a></li>
+							<li><a href="">項目</a></li>
+							<li><a href="">項目</a></li>
+							<li><a href="">項目</a></li>
+							<li><a href="">項目</a></li>
+							<li><a href="">項目</a></li>
+							<li><a href="">項目</a></li>
+							<li><a href="">項目</a></li>
+						</ul>
+					</dd>
+				</dl>
+			</li>
+		</ul>
+	</div>
+
+	<div class="panel">
+		<header class="header">
+			<ul>
+				<li><img src="./img/tms01/bell.png" alt="alert"></li>
+				<li><img src="./img/tms01/settings.png" alt="設定"></li>
+			</ul>
+		</header>
+
+		<div class="header2">
+			<h2>イベント編集　チーム</h2>
+			<div class="search_window">
+				<span></span><input type="search">
+			</div>
+		</div>
+
+
+		<!--modal-->
+		<div id="modal">
+		    <div id="modal_content">
+		    	<div class="modal_inner">
+
+			        <div class="modalClose btn_close"></div>
+					<h3>新規追加</h3>
+
+					<dl class="modal_inner--left">
+						<dt>ロゴ画像アップロード</dt>
+						<dd class="upload_img"></dd>
+					</dl>
+					<dl class="modal_inner--right">
+						<dt>チーム名</dt>
+						<dd><input type="text" name="" value="" placeholder=""></dd>
+						<dt>リーグ</dt>
+						<dd>
+							<select type="select" name="" value="" placeholder="">
+								<option value=""></option>
+								<option value="A">A</option>
+								<option value="B">B</option>
+							</select>
+						</dd>
+						<dt>ニックネーム</dt>
+						<dd><input type="text" name="" value="" placeholder=""></dd>
+						<dt>コード</dt>
+						<dd><input type="text" name="" value="" placeholder=""></dd>
+					</dl>
+
+					<div class="modal_inner--btn">
+						<button class="btn_add">追加</button>
+				        <button class="btn_close">キャンセル</button>
+			        </div>
+		        </div>
+		    </div>
+		</div>
+		<!--modal-->
+
+		<div class="tablewrap">
+
+			<div class="pulldown">
+				<select name="example">
+					<option value=""></option>
+					<option value="A">A</option>
+					<option value="B">B</option>
+					<option value="C">C</option>
+					<option value="D">D</option>
+					<option value="D">D</option>
+					<option value="E">E</option>
+					<option value="F">F</option>
+					<option value="G">G</option>
+					<option value="H">H</option>
+					<option value="I">I</option>
+					<option value="J">J</option>
+					<option value="K">K</option>
+					<option value="L">L</option>
+					<option value="M">M</option>
+					<option value="N">N</option>
+					<option value="O">O</option>
+					<option value="P">P</option>
+					<option value="Q">Q</option>
+					<option value="R">R</option>
+					<option value="S">S</option>
+					<option value="T">T</option>
+					<option value="U">U</option>
+					<option value="V">V</option>
+					<option value="W">W</option>
+					<option value="X">X</option>
+					<option value="Y">Y</option>
+					<option value="Z">Z</option>
+				</select>
+			</div>
+
+			<ul class="btnwrap">
+				<li class="newbtn btn_open"><a href="#">新規作成</a></li>
+				<li class="delbtn"><a href="">削除</a></li>
+			</ul>
+
+			<table class="table">
+				<tbody>
+					<tr>
+						<th>&nbsp;</th>
+						<th><span>チームロゴ</span></th>
+						<th>チーム名</th>
+						<th>リーグ</th>
+						<th>ニックネーム</th>
+						<th>コード</th>
+						<th>&nbsp;</th>
+					</tr>
+					<tr>
+						<td><input type="checkbox" name="course" value=""></td>
+						<td><div class="team"><img src="./img/tms01/carp.png" alt="広島東洋カープ"></div></td>
+						<td>広島東洋カープ</td>
+						<td>パシフィック・リーグ</td>
+						<td>カープ</td>
+						<td>カープ</td>
+						<td><div class="editbtn"><a href="#">編集</a></div></td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" name="course" value=""></td>
+						<td><div class="team"><img src="./img/tms01/dragon.png" alt="中日ドラゴンズ"></div></td>
+						<td>中日ドラゴンズ</td>
+						<td>パシフィック・リーグ</td>
+						<td>中日</td>
+						<td>中日</td>
+						<td><div class="editbtn"><a href="#">編集</a></div></td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" name="course" value=""></td>
+						<td><div class="team"><img src="./img/tms01/lion.png" alt="埼玉西部ライオンズ"></div></td>
+						<td>埼玉西部ライオンズ</td>
+						<td>パシフィック・リーグ</td>
+						<td>ライオンズ</td>
+						<td>ライオンズ</td>
+						<td><div class="editbtn"><a href="#">編集</a></div></td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" name="course" value=""></td>
+						<td><div class="team"><img src="./img/tms01/gian.png" alt="読売ジャイアンツ"></div></td>
+						<td>読売ジャイアンツ</td>
+						<td>パシフィック・リーグ</td>
+						<td>よみうり</td>
+						<td>よみうり</td>
+						<td><div class="editbtn"><a href="#">編集</a></div></td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" name="course" value=""></td>
+						<td><div class="team"><img src="./img/tms01/swarrow.png" alt="東京ヤクルトスワローズ"></div></td>
+						<td>東京ヤクルトスワローズ</td>
+						<td>パシフィック・リーグ</td>
+						<td>スワローズ</td>
+						<td>スワローズ</td>
+						<td><div class="editbtn"><a href="#">編集</a></div></td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" name="course" value=""></td>
+						<td><div class="team"><img src="./img/tms01/tiger.png" alt="阪神タイガース"></div></td>
+						<td>阪神タイガース</td>
+						<td>パシフィック・リーグ</td>
+						<td>阪神</td>
+						<td>よみうり</td>
+						<td><div class="editbtn"><a href="#">編集</a></div></td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" name="course" value=""></td>
+						<td><div class="team"><img src="./img/tms01/dena.png" alt="横浜DeNAベイスターズ"></div></td>
+						<td>横浜DeNAベイスターズ</td>
+						<td>パシフィック・リーグ</td>
+						<td>DeNA</td>
+						<td>よみうり</td>
+						<td><div class="editbtn"><a href="#">編集</a></div></td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" name="course" value=""></td>
+						<td><div class="team"><img src="./img/tms01/hamu.png" alt="北海道日本ハムファイターズ"></div></td>
+						<td>北海道日本ハムファイターズ</td>
+						<td>パシフィック・リーグ</td>
+						<td>日本ハム</td>
+						<td>よみうり</td>
+						<td><div class="editbtn"><a href="#">編集</a></div></td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" name="course" value=""></td>
+						<td><div class="team"><img src="./img/tms01/howks.png" alt="福岡ソフトバンクホークス"></div></td>
+						<td>福岡ソフトバンクホークス</td>
+						<td>パシフィック・リーグ</td>
+						<td>よみうり</td>
+						<td>よみうり</td>
+						<td><div class="editbtn"><a href="#">編集</a></div></td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" name="course" value=""></td>
+						<td><div class="team"><img src="./img/tms01/orix.png" alt="オリックス・バファローズ"></div></td>
+						<td>オリックス・バファローズ</td>
+						<td>パシフィック・リーグ</td>
+						<td>よみうり</td>
+						<td>よみうり</td>
+						<td><div class="editbtn"><a href="#">編集</a></div></td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" name="course" value=""></td>
+						<td><div class="team"><img src="./img/tms01/rakuten.png" alt="楽天イーグルス"></div></td>
+						<td>楽天イーグルス</td>
+						<td>パシフィック・リーグ</td>
+						<td>よみうり</td>
+						<td>よみうり</td>
+						<td><div class="editbtn"><a href="#">編集</a></div></td>
+					</tr>
+				</tbody>
+			</table>
+			<ul class="pagelink">
+				<li><a href=""><img src="./img/tms01/Icon_triangle_left.png"></a>︎</li>
+				<li><a href="">1</a></li>
+				<li><a href="">2</a></li>
+				<li><a href="">3</a></li>
+				<li><a href="">4</a></li>
+				<li><a href="">5</a></li>
+				<li><a href="">︎<img src="./img/tms01/Icon_triangle_right.png"></a></li>
+			</ul>
+		</div>
+	</div>
+</body>
+
+<!--accordion開閉scriopt-->
+<script>
+    $(function(){
+        $("#acMenu dt").on("click", function() {
+            $(this).next().slideToggle();
+        });
+    });
+</script>
+<!--accordion開閉script-->
+
+<!--modal-->
+<script>
+$(function(){
+    var modal = $('#modal'),
+        modalContent = $('#modal_content'),
+        btnOpen = $(".btn_open"),
+        btnClose = $(".btn_close");
+ 
+    $(btnOpen).on('click', function() {
+        modal.show();
+    });
+ 
+    $(modal).on('click', function(event) {
+        if(!($(event.target).closest(modalContent).length)||($(event.target).closest(btnClose).length)){
+            modal.hide();
+        }
+    });
+});
+</script>
+<!--modal-->
+
+</html>
