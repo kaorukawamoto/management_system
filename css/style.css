@@ -360,7 +360,8 @@ input[type="search"]::-webkit-search-decoration {
           width: 20px;
           height: 20px;
           background: none;
-          background-size: contain; }
+          background-size: contain;
+          background-color: #fff !important; }
         .panel .tablewrap .table tr td input[type="checkbox"]:checked:before {
           content: "";
           position: absolute;
@@ -646,6 +647,53 @@ input[type="search"]::-webkit-search-decoration {
       #modal_content .modal_inner--btn .btn_add {
         background-color: #86A0CA;
         color: #fff; }
+
+/*基本テーブルレイアウトのスタイルはtms01.scss使用*/
+/*tms11_2 page css*/
+/*activになった行*/
+.panel .tablewrap .table #active {
+  background: transparent;
+  background-color: rgba(164, 198, 134, 0.3); }
+  .panel .tablewrap .table #active td .endbtn {
+    background-color: #73AE9D; }
+    .panel .tablewrap .table #active td .endbtn a {
+      padding-left: 25px; }
+    .panel .tablewrap .table #active td .endbtn:before {
+      display: none; }
+  .panel .tablewrap .table #active td:nth-child(n+3) {
+    padding: 0 40px 0 5px; }
+    .panel .tablewrap .table #active td:nth-child(n+3) input {
+      border: 1px solid #E9EBED;
+      border-radius: 3px;
+      background-color: #fff;
+      height: 35px;
+      line-height: 35px;
+      font-size: 14px;
+      padding-left: 10px;
+      display: inline-block; }
+  .panel .tablewrap .table #active td:nth-child(n+5):nth-child(-n+6) {
+    padding: 0 40px 0 5px; }
+    .panel .tablewrap .table #active td:nth-child(n+5):nth-child(-n+6) input {
+      max-width: 140px;
+      width: 80%; }
+  .panel .tablewrap .table #active td:nth-child(4) {
+    padding: 0 40px 0 5px; }
+    .panel .tablewrap .table #active td:nth-child(4) select {
+      border: 1px solid #E9EBED;
+      border-radius: 3px;
+      background-color: #fff;
+      height: 37px;
+      line-height: 37px;
+      font-size: 14px;
+      padding-left: 10px;
+      display: inline-block;
+      min-width: 200px;
+      background-image: url("../img/tms01/Icon_triangle_bottm.png");
+      background-repeat: no-repeat;
+      background-position: 95% 50%;
+      background-size: 12px 6px; }
+  .panel .tablewrap .table #active td:last-child {
+    padding: 0 0 0 14px; }
 
 /*基本テーブルレイアウトのスタイルはtms01.scss使用*/
 /*tms11page css*/
