@@ -654,46 +654,44 @@ input[type="search"]::-webkit-search-decoration {
 .panel .tablewrap .table #active {
   background: transparent;
   background-color: rgba(164, 198, 134, 0.3); }
-  .panel .tablewrap .table #active td .endbtn {
-    background-color: #73AE9D; }
-    .panel .tablewrap .table #active td .endbtn a {
-      padding-left: 25px; }
-    .panel .tablewrap .table #active td .endbtn:before {
-      display: none; }
-  .panel .tablewrap .table #active td:nth-child(n+3) {
-    padding: 0 40px 0 5px; }
-    .panel .tablewrap .table #active td:nth-child(n+3) input {
-      border: 1px solid #E9EBED;
-      border-radius: 3px;
-      background-color: #fff;
-      height: 35px;
-      line-height: 35px;
-      font-size: 14px;
-      padding-left: 10px;
-      display: inline-block; }
-  .panel .tablewrap .table #active td:nth-child(n+5):nth-child(-n+6) {
-    padding: 0 40px 0 5px; }
-    .panel .tablewrap .table #active td:nth-child(n+5):nth-child(-n+6) input {
-      max-width: 140px;
-      width: 80%; }
-  .panel .tablewrap .table #active td:nth-child(4) {
-    padding: 0 40px 0 5px; }
-    .panel .tablewrap .table #active td:nth-child(4) select {
-      border: 1px solid #E9EBED;
-      border-radius: 3px;
-      background-color: #fff;
-      height: 37px;
-      line-height: 37px;
-      font-size: 14px;
-      padding-left: 10px;
-      display: inline-block;
-      min-width: 200px;
-      background-image: url("../img/tms01/Icon_triangle_bottm.png");
-      background-repeat: no-repeat;
-      background-position: 95% 50%;
-      background-size: 12px 6px; }
+  .panel .tablewrap .table #active td:nth-child(n+2) {
+    padding: 0 10px 0 5px; }
+    .panel .tablewrap .table #active td:nth-child(n+2) .endbtn {
+      background-color: #73AE9D; }
+      .panel .tablewrap .table #active td:nth-child(n+2) .endbtn a {
+        padding-left: 25px; }
+      .panel .tablewrap .table #active td:nth-child(n+2) .endbtn:before {
+        display: none; }
+  .panel .tablewrap .table #active td:nth-child(n+3) input {
+    border: 1px solid #E9EBED;
+    border-radius: 3px;
+    background-color: #fff;
+    height: 35px;
+    line-height: 35px;
+    font-size: 14px;
+    padding-left: 10px;
+    display: inline-block;
+    max-width: 90%; }
+  .panel .tablewrap .table #active td:nth-child(n+5):nth-child(-n+6) input {
+    width: 140px;
+    max-width: 80%; }
+  .panel .tablewrap .table #active td:nth-child(4) select {
+    border: 1px solid #E9EBED;
+    border-radius: 3px;
+    background-color: #fff;
+    height: 37px;
+    line-height: 37px;
+    font-size: 14px;
+    padding-left: 10px;
+    display: inline-block;
+    min-width: 200px;
+    background-image: url("../img/tms01/Icon_triangle_bottm.png");
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+    background-size: 12px 6px;
+    max-width: 90%; }
   .panel .tablewrap .table #active td:last-child {
-    padding: 0 0 0 14px; }
+    padding: 0 0 0 13px; }
 
 /*基本テーブルレイアウトのスタイルはtms01.scss使用*/
 /*tms11page css*/
@@ -828,6 +826,53 @@ input[type="search"]::-webkit-search-decoration {
         background-color: #73AE9D;
         color: #fff; }
 
+/*基本テーブルレイアウトのスタイルはtms01.scss使用*/
+/*tms12_2 page css*/
+/*newAddになった行*/
+.panel .tablewrap .table #newAdd {
+  background: transparent;
+  background-color: #E3EAF3;
+  border-top: 3px solid #fff; }
+  .panel .tablewrap .table #newAdd td:nth-child(n+3) {
+    padding: 0 10px 0 5px; }
+    .panel .tablewrap .table #newAdd td:nth-child(n+3) .addbtn {
+      background-color: #86A0CA; }
+      .panel .tablewrap .table #newAdd td:nth-child(n+3) .addbtn a {
+        padding-left: 25px; }
+      .panel .tablewrap .table #newAdd td:nth-child(n+3) .addbtn:before {
+        display: none; }
+    .panel .tablewrap .table #newAdd td:nth-child(n+3) input {
+      border: 1px solid #E9EBED;
+      border-radius: 3px;
+      background-color: #fff;
+      height: 35px;
+      line-height: 35px;
+      font-size: 14px;
+      padding-left: 10px;
+      display: inline-block;
+      max-width: 90%; }
+  .panel .tablewrap .table #newAdd td:nth-child(n+5):nth-child(-n+6) input {
+    width: 140px;
+    max-width: 80%; }
+  .panel .tablewrap .table #newAdd td:nth-child(4) select {
+    border: 1px solid #E9EBED;
+    border-radius: 3px;
+    background-color: #fff;
+    height: 37px;
+    line-height: 37px;
+    font-size: 14px;
+    padding-left: 10px;
+    display: inline-block;
+    min-width: 200px;
+    background-image: url("../img/tms01/Icon_triangle_bottm.png");
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+    background-size: 12px 6px;
+    max-width: 90%; }
+  .panel .tablewrap .table #newAdd td:last-child {
+    padding: 0 0 0 13px; }
+
+/*新規追加されたことによって、trが*/
 /*tms01page css*/
 /*accordion開閉用*/
 #acMenu dt {

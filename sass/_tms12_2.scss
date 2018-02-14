@@ -2,19 +2,26 @@
 
 /*基本テーブルレイアウトのスタイルはtms01.scss使用*/
 
-/*tms11_2 page css*/
+/*tms12_2 page css*/
 
-/*activになった行*/
+/*newAddになった行*/
 .panel{
     .tablewrap{
         .table{
-            #active{
+            // tr:nth-child(odd):not(:nth-child(2)){
+            //     background-color: #fff;
+            // }
+            // tr:nth-child(even):not(:nth-child(2)){
+            //     background-color:$color_glay06;
+            // }
+            #newAdd{
                 background:transparent;
-                background-color:rgba(164,198,134,0.3);
-                td:nth-child(n+2){
+                background-color:$panel_color03;
+                border-top:3px solid #fff;
+                td:nth-child(n+3){
                     padding:0 10px 0 5px;
-                    .endbtn{
-                        background-color: $color_green;
+                    .addbtn{
+                        background-color: $color_blue;
                         a{
                             padding-left:25px;
                         }
@@ -22,8 +29,6 @@
                             display: none;
                         }
                     }
-                }
-                td:nth-child(n+3){
                     input{
                         border:1px solid $color_glay07;
                         border-radius:3px;
@@ -67,3 +72,5 @@
         }
     }
 }
+
+/*新規追加されたことによって、trが*/
