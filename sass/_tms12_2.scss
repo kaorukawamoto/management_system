@@ -1,0 +1,76 @@
+@charset "utf-8";
+
+/*基本テーブルレイアウトのスタイルはtms01.scss使用*/
+
+/*tms12_2 page css*/
+
+/*newAddになった行*/
+.panel{
+    .tablewrap{
+        .table{
+            .newtable{
+                tr:nth-child(n+3):nth-child(odd){
+                    background-color: #fff;
+                }
+                tr:nth-child(n+3):nth-child(even){
+                    background-color:$color_glay06; 
+                }
+            }
+            #newAdd{
+                background:transparent;
+                background-color:$panel_color03;
+                border-top:3px solid #fff;
+                td:nth-child(n+3){
+                    padding:0 10px 0 5px;
+                    .addbtn{
+                        background-color: $color_blue;
+                        a{
+                            padding-left:25px;
+                        }
+                        &:before{
+                            display: none;
+                        }
+                    }
+                    input{
+                        border:1px solid $color_glay07;
+                        border-radius:3px;
+                        background-color:#fff;
+                        height: 35px;
+                        line-height: 35px;
+                        font-size: 14px;
+                        padding-left:10px;
+                        display: inline-block;
+                        max-width:90%;
+                    }
+                }
+                td:nth-child(n+5):nth-child(-n+6){
+                    input{
+                        width:140px;
+                        max-width:80%;
+                    }
+                }
+                td:nth-child(4){
+                    select{
+                        border:1px solid $color_glay07;
+                        border-radius:3px;
+                        background-color:#fff;
+                        height: 37px;
+                        line-height: 37px;
+                        font-size: 14px;
+                        padding-left:10px;
+                        display: inline-block;
+                        min-width: 200px;
+                        background-image:url("../img/tms01/Icon_triangle_bottm.png");
+                        background-repeat:no-repeat;
+                        background-position: 95% 50%;
+                        background-size:12px 6px;
+                        max-width: 90%;
+                    }
+                }
+                td:last-child{
+                    padding:0 0 0 13px;
+                }
+            }
+        }
+    }
+}
