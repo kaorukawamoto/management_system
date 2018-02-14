@@ -1,0 +1,159 @@
+@charset "utf-8";
+
+/*基本テーブルレイアウトのスタイルはtms01.scss使用*/
+
+/*tms11page css*/
+
+$modal_color01:#F5F8FA;
+
+/*lightbox(modal)箇所のみ*/
+#modal_2{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(255,255,255,0.4);
+}
+#modal_content_2{
+    width:477px;
+    height:562px;
+    background:#fff;
+    margin:10% auto auto 35%;
+    padding:20px 30px 30px 30px;
+    margin-bottom: 8rem;
+    position:relative;
+    box-shadow:0px 10px 10px 5px rgba(0, 0, 0, 0.1);
+    .modal_inner{
+    	position:relative;
+    	color:$panel_color04;
+    	font-size: 14px;
+    	font-weight: bold;
+    	.modalClose{
+    		content:"";
+    		width:auto;
+    		height:auto;
+    		display: inline-block;
+			position: absolute;
+			z-index: 10;
+			right:0;
+			margin: 0 10px 0 0;
+			padding: 0;
+			width: 2px;
+			height: 20px;
+			background: $color_red;
+			transform: rotate(45deg);
+			&:hover{
+				cursor: pointer;
+				opacity: 0.8;
+			}
+			&:before{
+				display: block;
+				content: "";
+				position: absolute;
+				top: 54%;
+				left: -8px;
+				width: 20px;
+				height: 2px;
+				margin-top: -2px;
+				background: $color_red;
+			}
+    	}
+    	.modal_title_2{
+    		color:$color_navy;
+    		font-weight: bold;
+    		font-size: 14px;
+    		position:relative;
+    		z-index: 2;
+    		padding-top:30px;
+    		padding-left:0;
+    		margin-bottom: 2rem;
+    		width:50%;
+    		&:before{
+    			content:"";
+                background-image:url("../img/tms12/Icon/Icon_pen.png");
+                background-repeat:no-repeat;
+                display: inline-block;
+                background-size:contain;
+                width:12px;
+                height: 12px;
+                padding-left: 5px;
+    		}
+    	}
+    	&--left{
+    		width:35%;
+    		float:left;
+    		.upload_img{
+    			border:1px solid $panel_color06;
+    			background-color:rgba(255,255,255,1);
+    			background-image: url("../img/tms12/dragon_b.png");
+    			background-repeat:no-repeat;
+    			background-size:80%;
+    			background-position:center;
+    			border-radius:6px;
+    			width:144px;
+    			height:144px;
+    			display: block;
+    			margin:10px 0 0 0;
+    		}
+
+    	}
+    	&--right{
+    		width:62%;
+    		float:right;
+    		dt{
+    			margin:0 0 10px 0;
+    			width:100%;
+    			max-width: 290px;
+    		}
+    		dd{
+    			width:100%;
+    			overflow: hidden;
+    			input,select{
+    				border:1px solid $panel_color06;
+    				width:95%;
+    				height:40px;
+    				border-radius:4px;
+    				margin:0 0 20px 0;
+    				padding-left:10px;
+    			}
+    			select{
+    				background-image:url("../img/tms01/Icon_triangle_bottm.png");
+					background-repeat:no-repeat;
+					background-position: 95% 50%;
+					background-size:12px 6px;
+    			}
+    		}
+    	}
+    	&--btn{
+    		clear:both;
+    		width:100%;
+    		button{
+    			width:118px;
+    			height:40px;
+    			border-radius:4px;
+    			font-size: 14px;
+    			float:right;
+    			&:hover{
+    				cursor: pointer;
+    				opacity: 0.8;
+    			}
+    		}
+    		.btn_close_2{
+    			background-color:$modal_color01;
+    			color:$color_glay09;
+    			margin-right:1rem;
+
+    		}
+    		.btn_add_2{
+    			background-color:$color_green;
+    			color:#fff;
+    		}
+    	}
+    }
+}
+
+
