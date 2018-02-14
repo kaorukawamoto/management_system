@@ -8,12 +8,14 @@
 .panel{
     .tablewrap{
         .table{
-            // tr:nth-child(odd):not(:nth-child(2)){
-            //     background-color: #fff;
-            // }
-            // tr:nth-child(even):not(:nth-child(2)){
-            //     background-color:$color_glay06;
-            // }
+            .newtable{
+                tr:nth-child(n+3):nth-child(odd){
+                    background-color: #fff;
+                }
+                tr:nth-child(n+3):nth-child(even){
+                    background-color:$color_glay06; 
+                }
+            }
             #newAdd{
                 background:transparent;
                 background-color:$panel_color03;
@@ -72,5 +74,3 @@
         }
     }
 }
-
-/*新規追加されたことによって、trが*/

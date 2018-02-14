@@ -829,6 +829,12 @@ input[type="search"]::-webkit-search-decoration {
 /*基本テーブルレイアウトのスタイルはtms01.scss使用*/
 /*tms12_2 page css*/
 /*newAddになった行*/
+.panel .tablewrap .table .newtable tr:nth-child(n+3):nth-child(odd) {
+  background-color: #fff; }
+
+.panel .tablewrap .table .newtable tr:nth-child(n+3):nth-child(even) {
+  background-color: #EFF3F6; }
+
 .panel .tablewrap .table #newAdd {
   background: transparent;
   background-color: #E3EAF3;
@@ -872,7 +878,6 @@ input[type="search"]::-webkit-search-decoration {
   .panel .tablewrap .table #newAdd td:last-child {
     padding: 0 0 0 13px; }
 
-/*新規追加されたことによって、trが*/
 /*tms01page css*/
 /*accordion開閉用*/
 #acMenu dt {
