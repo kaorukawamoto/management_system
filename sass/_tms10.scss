@@ -1,17 +1,7 @@
 @charset "utf-8";
-/*tms01page css*/
 
-$nav_color01:#262A35;
-$nav_color02:#343948;
-$nav_color03:#D8D8D8;
-$panel_color01:#F8FAFB;
-$panel_color02:#EFF3F6;
-$panel_color03:#E3EAF3;
-$panel_color04:#637484;
-$panel_color05:#979797;
-$panel_color06:#E9EBED;
-
-
+/*tms_10.html　css*/
+/*  このtableスタイルが基本スタイル　*/
 
 /*Logo*/
 .logoWrap{
@@ -141,10 +131,8 @@ $panel_color06:#E9EBED;
 				float:left;
 				height: 40px;
 				margin:0 5px;
-				// box-shadow:0px 0px 3px 1px rgba(0, 0, 0, 0.2);
 				a{
 					text-decoration: none;
-					// color:#fff;
 					font-size: 14px;
 					display: block;
 					line-height: 40px;
@@ -152,9 +140,7 @@ $panel_color06:#E9EBED;
 				}
 				a:visited{
 					text-decoration: none;
-					// color:#fff;
 				}
-
 				&:hover{
 				opacity: 0.8;
 				}
@@ -187,7 +173,6 @@ $panel_color06:#E9EBED;
 					    background-size: contain;
 					    background-color:#fff !important;
 					}
-
 					input[type="checkbox"]:checked:before {
 					    content: "";
 					    position: absolute;
@@ -247,8 +232,8 @@ $panel_color06:#E9EBED;
 	}
 }
 
-/*ボタン類*/
 
+/*ボタン類*/
 .newbtn{
 	background-color:$color_blue;
 	border-radius:3px;
@@ -366,6 +351,7 @@ $panel_color06:#E9EBED;
 	}
 }
 
+
 /*ページリンク*/
 .pagelink{
 	clear:both;
@@ -403,9 +389,6 @@ $panel_color06:#E9EBED;
 		a:hover{
 			background-color:$color_glay01;
 		}
-	}
-	li:first-child{
-		border-left:none;
 	}
 	li:last-child{
 		border-right:1px solid $panel_color06;

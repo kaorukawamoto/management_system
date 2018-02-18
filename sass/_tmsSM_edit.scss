@@ -1,5 +1,12 @@
 @charset "utf-8";
 
+/*tms_SM_add.htmlグループ
+    tms_SM_edit.html
+    tms_SM_edit_p.html   css*/
+
+/* テーブルスタイルはtms10.scssを基本にし、
+　　このページ固有のstyleを追加　　     */
+
 /*stm_SM*/
 .studium_check_2{
     min-width:60px;
@@ -40,11 +47,8 @@
         }
 }
 
-/*tms_SM_add page css*/
 
-$modal_color01:#F5F8FA;
-
-/*lightbox(modal)箇所のみ*/
+/*lightbox(modal_4)箇所のみ*/
 #modal_4{
     display: none;
     position: fixed;
