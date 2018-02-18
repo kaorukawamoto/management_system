@@ -661,6 +661,8 @@ input[type="search"]::-webkit-search-decoration {
           border-radius: 4px;
           margin: 0 0 20px 0;
           padding-left: 10px; }
+          #modal_content .modal_inner--right dd input:focus, #modal_content .modal_inner--right dd select:focus {
+            border: 2px solid #86A0CA; }
         #modal_content .modal_inner--right dd select {
           background-image: url("../img/tms01/Icon_triangle_bottm.png");
           background-repeat: no-repeat;
@@ -839,11 +841,15 @@ input[type="search"]::-webkit-search-decoration {
           border-radius: 4px;
           margin: 0 0 20px 0;
           padding-left: 10px; }
+          #modal_content_2 .modal_inner--right dd input:focus, #modal_content_2 .modal_inner--right dd select:focus {
+            border: 2px solid #73AE9D; }
         #modal_content_2 .modal_inner--right dd select {
           background-image: url("../img/tms01/Icon_triangle_bottm.png");
           background-repeat: no-repeat;
           background-position: 95% 50%;
           background-size: 12px 6px; }
+          #modal_content_2 .modal_inner--right dd select:focus {
+            border: 2px solid #73AE9D; }
     #modal_content_2 .modal_inner--btn {
       clear: both;
       width: 100%; }
@@ -1280,7 +1286,7 @@ input[type="search"]::-webkit-search-decoration {
       #modal_content_4 .modal_inner--right .upload_img {
         border: 1px solid #E9EBED;
         background-color: #fff;
-        background-image: url("../img/tms_SM/studium.png");
+        background-image: url("../img/tmsSM/studium.png");
         background-repeat: no-repeat;
         background-size: 102%;
         background-position: center;

@@ -133,6 +133,9 @@ $modal_color01:#F5F8FA;
     				border-radius:4px;
     				margin:0 0 20px 0;
     				padding-left:10px;
+                    &:focus{
+                        border:2px solid $color_blue;
+                    }
     			}
     			select{
     				background-image:url("../img/tms01/Icon_triangle_bottm.png");
