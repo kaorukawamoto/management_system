@@ -69,7 +69,7 @@
 			float:right;
 			span{
 				display: block;
-				background-image:url("../img/tms01/search.png");
+				background-image:url("../img/Icon/search.png");
 				width: 12px;
 				height: 12px;
 				background-repeat:no-repeat;
@@ -99,7 +99,7 @@
 			width: 240px;
 			height: 40px;
 			float:left;
-			background-image:url("../img/tms01/Icon_triangle_bottm.png");
+			background-image:url("../img/Icon/triangle_bottm.png");
 			background-repeat:no-repeat;
 			background-position: 95% 50%;
 			background-size:12px 6px;
@@ -181,7 +181,7 @@
 					    display: inline-block;
 					    width: 20px;
 					    height: 20px;
-					    background: url(../img/tms01/check.png);
+					    background: url(../img/Icon/check.png);
 					    background-size: 16px 13px;
 					    background-repeat:no-repeat;
 					}
@@ -251,7 +251,7 @@
 	}
 	&:before{
 		content:"";
-		background-image:url("../img/tms01/Icon_plus.png");
+		background-image:url("../img/Icon/plus.png");
 		background-repeat:no-repeat;
 		background-size: 18px 18px;
 		width: 20px;
@@ -278,7 +278,7 @@
 	}
 	&:before{
 		content:"";
-		background-image:url("../img/tms01/Icon_trash.png");
+		background-image:url("../img/Icon/trash.png");
 		background-repeat:no-repeat;
 		background-size: 16px 22px;
 		width: 16px;
@@ -302,7 +302,7 @@
 	}
 	&:before{
 		content:"";
-		background-image:url("../img/tms01/Icon_csvUp.png");
+		background-image:url("../img/Icon/csvUp.png");
 		background-repeat:no-repeat;
 		background-size: 14px 14px;
 		width: 14px;
@@ -326,7 +326,7 @@
 	}
 	&:before{
 		content:"";
-		background-image: url("../img/tms01/Icon_edit.png");
+		background-image: url("../img/Icon/edit_2x.png");
 		background-repeat:no-repeat;
 		background-size: contain;
 	    width: 14px;

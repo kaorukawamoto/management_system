@@ -11,17 +11,19 @@
 .studium_check{
     min-width:60px;
     input{
-        background-image:url("../img/tms_SM/icon_look.png");
+        background-image:url("../img/Icon/look.png");
         background-color:transparent!important;
-        width:46px;
-        height:14px;
-        background-repeat:no-repeat;
-        background-size:contain;
-        background-position:40% center;
-        display:block;
-        cursor:pointer;
-        opacity:0.2;
-        margin:auto;
+        width:46px!important;
+        height:14px!important;
+        background-repeat:no-repeat!important;
+        background-size:contain!important;
+        background-position:40% center!important;
+        display:block!important;
+        cursor:pointer!important;
+        opacity:0.2!important;
+        margin:auto!important;
+        border:none!important;
+        padding:0!important;
         &:focus{
             opacity:1;
             background-color:transparent!important;
@@ -141,7 +143,7 @@
                     }
                 }
                 select{
-                    background-image:url("../img/tms01/Icon_triangle_bottm.png");
+                    background-image:url("../img/Icon/triangle_bottm.png");
                     background-repeat:no-repeat;
                     background-position: 95% 50%;
                     background-size:12px 6px;
@@ -157,7 +159,7 @@
             .upload_img{
                 border:1px solid $panel_color06;
                 background-color:rgba(239,243,246,0.5);
-                background-image: url("../img/tms11/upload.png");
+                background-image: url("../img/upload.png");
                 background-repeat:no-repeat;
                 background-size:40%;
                 background-position:55% center;
@@ -191,7 +193,7 @@
                     }
     			}
     			select{
-    				background-image:url("../img/tms01/Icon_triangle_bottm.png");
+    				background-image:url("../img/Icon/triangle_bottm.png");
 					background-repeat:no-repeat;
 					background-position: 95% 50%;
 					background-size:12px 6px;

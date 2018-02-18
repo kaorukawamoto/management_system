@@ -10,7 +10,7 @@
 
 /*tms_PM_1_1*/
 .ticket_select{
-	background-image:url("../img/tmsPM/icon_tricircle_bottom.png");
+	background-image:url("../img/tricircle_bottom.png");
 	background-repeat:no-repeat;
 	background-position:center;
 	background-size:contain;
@@ -22,7 +22,7 @@
 
 /*tms_PM_1_1b*/
 .ticket_select--r{
-	background-image:url("../img/tmsPM/icon_tricircle_bottom.png");
+	background-image:url("../img/tricircle_bottom.png");
 	background-repeat:no-repeat;
 	background-position:center;
 	background-size:contain;
@@ -46,7 +46,7 @@
     display:none;
     }
 .acticket .active .ticket_select--r{
-	background-image:url("../img/tmsPM/icon_tricircle_top.png");
+	background-image:url("../img/tricircle_top.png");
 }
 .acticket .active{
 	font-weight:bold;
@@ -176,7 +176,7 @@
 								    }
 								    &:before{
 								    	content: "";
-									    background-image: url(../img/tmsSM/Icon_edit.png);
+									    background-image: url(../img/Icon/edit.png);
 									    background-repeat: no-repeat;
 									    background-size: contain;
 									    width: 14px;
