@@ -6,12 +6,19 @@
 #acMenu dt{
     display:block;
     cursor:pointer;
+    color:$nav_color03;
     }
 #acMenu dd{
     display:none;
     }
+#acMenu .active{
+	color:#fff;
+	&:before{
+		background-color:#fff;
+	}
+}
 
-/*nav*/
+/*navigation*/
 .nav{
 	position: relative;
 	width:240px;
@@ -26,21 +33,96 @@
 			line-height: 1.5;
 			font-weight: bold;
 			position:relative;
+			&:after{
+				content: "";
+			    width: 0;
+				height: 0;
+				border-style: solid;
+				border-width: 6px 6px 0 6px;
+				border-color: #ffffff transparent transparent transparent;
+				position:absolute;
+				right:22px;
+				top:40px;
+			}
+		}
+		.nav_edit{
 			&:before{
 				content:"";
+				background-image:url("../img/Icon/edit_bg.png");
+				background-color:$nav_color03;
 				width:28px;
 				height:28px;
 				display:inline-block;
 				background-repeat:no-repeat;
-				background-size:contain;
-				background-color:#fff;
-				position:absolute;
-				top:0;
-				left:0;
-				&:nav_edit{
-					background-image:url("../img/")
-				}
-
+				background-size:28px 28px;
+				position:relative;
+				top:8px;
+				left:0px;
+				margin-right:16px;
+			}
+		}
+		.nav_schedule{
+			&:before{
+				content:"";
+				background-image:url("../img/Icon/calender_bg.png");
+				background-color:$nav_color03;
+				width:28px;
+				height:28px;
+				display:inline-block;
+				background-repeat:no-repeat;
+				background-size:28px 28px;
+				position:relative;
+				top:8px;
+				left:0px;
+				margin-right:16px;
+			}
+		}
+		.nav_price{
+			&:before{
+				content:"";
+				background-image:url("../img/Icon/yen_bg.png");
+				background-color:$nav_color03;
+				width:28px;
+				height:28px;
+				display:inline-block;
+				background-repeat:no-repeat;
+				background-size:28px 28px;
+				position:relative;
+				top:8px;
+				left:0px;
+				margin-right:16px;
+			}
+		}
+		.nav_seat{
+			&:before{
+				content:"";
+				background-image:url("../img/Icon/tickets_bg.png");
+				background-color:$nav_color03;
+				width:28px;
+				height:28px;
+				display:inline-block;
+				background-repeat:no-repeat;
+				background-size:28px 28px;
+				position:relative;
+				top:8px;
+				left:0px;
+				margin-right:16px;
+			}
+		}
+		.nav_report{
+			&:before{
+				content:"";
+				background-image:url("../img/Icon/about_bg.png");
+				background-color:$nav_color03;
+				width:30px;
+				height:30px;
+				display:inline-block;
+				background-repeat:no-repeat;
+				background-size:30px 30px;
+				position:relative;
+				top:10px;
+				left:0px;
+				margin-right:14px;
 			}
 		}
 		dd{
