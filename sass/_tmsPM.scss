@@ -1,0 +1,191 @@
+@charset "utf-8";
+
+/*page css*/
+
+/*tms_PM_1_1*/
+.ticket_select{
+	background-image:url("../img/tmsPM/icon_tricircle_bottom.png");
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:contain;
+	width:16px;
+	height:16px;
+	display:inline-block;
+	padding:3px 0 0 0;
+}
+
+/*tms_PM_1_1b*/
+.ticket_select--r{
+	background-image:url("../img/tmsPM/icon_tricircle_bottom.png");
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:contain;
+	width:16px;
+	height:16px;
+	display:inline-block;
+	margin:0 1.5rem 0 0;
+	&:hover{
+		opacity:0.8;
+		cursor:pointer;
+	}
+}
+
+
+/*accordion開閉用*/
+.acticket .ticket_select--r{
+    display:inline-block;
+    cursor:pointer;
+    }
+.acticket dd{
+    display:none;
+    }
+.acticket .active .ticket_select--r{
+	background-image:url("../img/tmsPM/icon_tricircle_top.png");
+}
+.acticket .active{
+	font-weight:bold;
+}
+
+
+/*newAdd_3になった行*/
+.panel{
+    .tablewrap{
+        .table{
+            .newtable{
+                tr:nth-child(n+3):nth-child(odd){
+                    background-color: #fff;
+                }
+                tr:nth-child(n+3):nth-child(even){
+                    background-color:$color_glay06; 
+                }
+            }
+            #newAdd_3{
+                background:transparent;
+                background-color:$panel_color03;
+                border-top:3px solid #fff;
+                height:auto!important;
+                overflow:auto;
+                padding:20px;
+                position:relative;
+                dt{
+                    line-height:55px;
+                }
+                .editbtn{
+                    position:absolute;
+                    top:16px;
+                }
+                .checkbox{
+                	position:absolute;
+                	top:14px;
+                }
+                .acticket_body{
+                	.select_tipe{
+	                	tbody{
+	                		background-color:$panel_color03;
+                			color:#333;
+                			tr:first-child{
+                				font-weight:inherit;
+                				}
+            				td{
+	                			background-color:$panel_color03;
+	                			color:#333;
+		                		padding:0 10px 0 14px;
+			                    .addbtn{
+			                        background-color: $color_blue;
+			                        a{
+			                            padding-left:25px;
+			                        }
+			                        &:before{
+			                            display: none;
+			                        }
+			                    }
+			                    input{
+			                        border-radius:3px;
+			                        background-color:#fff;
+			                        line-height: 35px;
+			                        font-size: 14px;
+			                        padding-left:10px;
+			                        display: inline-block;
+			                        max-width:90%;
+			                    }
+		                	}
+		                	.sheet{
+		                		position:relative;
+		                		min-width:160px;
+		                		max-width:240px;
+		                		&:before{
+		                			content:"座席タイプ";
+		                			color:$panel_color04;
+		                			opacity:0.6;
+		                			font-size:10px;
+		                			position:absolute;
+		                			top:6px;
+		                		}
+		                	}
+		                	.tipe{
+		                		position:relative;
+		                		min-width:100px;
+		                		max-width:200px;
+		                		&:before{
+		                			content:"チケットタイプ";
+		                			color:$panel_color04;
+		                			opacity:0.6;
+		                			font-size:10px;
+		                			position:absolute;
+		                			top:6px;
+		                		}
+		                	}
+		                	.price{
+		                		position:relative;
+		                		min-width:100px;
+		                		width:auto;
+		                		&:before{
+		                			content:"チケットタイプ";
+		                			color:$panel_color04;
+		                			opacity:0.6;
+		                			font-size:10px;
+		                			position:absolute;
+		                			top:6px;
+		                		}
+		                	}
+		                	.edit{
+		                		position:relative;
+		                		min-width:100px;
+		                		width:100%;
+		                		.editIcon{
+			                		color:$panel_color04;
+								    height: 24px;
+								    line-height: 24px;
+								    display: block;
+								    position: absolute;
+								    top:10px;
+								    right:-60px;
+								    padding-left:1.5rem;
+								    a{
+								    	color:inherit;
+								    	text-decoration:none;
+								    	display:block;
+								    	width:inherit;
+								    	height:inherit;
+								    }
+								    &:before{
+								    	content: "";
+									    background-image: url(../img/tmsSM/Icon_edit.png);
+									    background-repeat: no-repeat;
+									    background-size: contain;
+									    width: 14px;
+									    height: 14px;
+									    position: absolute;
+									    top: 6px;
+									    left: 6px;
+								    }
+			                	}
+		                	}
+		                }
+	            	}
+                }                
+            }
+        }
+    }
+}
+
