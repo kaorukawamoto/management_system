@@ -11,14 +11,7 @@ $panel_color04:#637484;
 $panel_color05:#979797;
 $panel_color06:#E9EBED;
 
-/*accordion開閉用*/
-#acMenu dt{
-    display:block;
-    cursor:pointer;
-    }
-#acMenu dd{
-    display:none;
-    }
+
 
 /*Logo*/
 .logoWrap{
@@ -35,48 +28,6 @@ $panel_color06:#E9EBED;
 		font-size: 12px;
 		position:relative;
 		top:-10px;
-	}
-}
-
-/*nav*/
-.nav{
-	position: relative;
-	width:240px;
-	height:100%;
-	background-color:$nav_color01;
-	color:#fff;
-	float:left;
-	.accordion{
-		dt{
-			padding:20px;
-			font-size: 12px;
-			line-height: 1.5;
-			font-weight: bold;
-		}
-		dd{
-			background-color:$nav_color02;
-			box-shadow:rgba(0,0,0,0.5)0 1px 2px inset;
-			font-size: 12px;
-			padding:10px 0 10px 0;
-			ul{
-				li{
-					color:$nav_color03;
-					padding:10px 20px 10px 20px;
-					a{
-						color:$nav_color03;
-						text-decoration: none;
-					}
-					a:visited{
-						color:$nav_color03;
-						text-decoration: none;
-					}
-					a:hover{
-						font-weight: bold;
-						color:#fff;
-					}
-				}
-			}
-		}
 	}
 }
 

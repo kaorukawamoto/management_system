@@ -175,14 +175,6 @@ input[type="search"]::-webkit-search-decoration {
       color: #fff; }
 
 /*tms01page css*/
-/*accordion開閉用*/
-#acMenu dt {
-  display: block;
-  cursor: pointer; }
-
-#acMenu dd {
-  display: none; }
-
 /*Logo*/
 .logoWrap {
   width: 220px;
@@ -197,37 +189,6 @@ input[type="search"]::-webkit-search-decoration {
     font-size: 12px;
     position: relative;
     top: -10px; }
-
-/*nav*/
-.nav {
-  position: relative;
-  width: 240px;
-  height: 100%;
-  background-color: #262A35;
-  color: #fff;
-  float: left; }
-  .nav .accordion dt {
-    padding: 20px;
-    font-size: 12px;
-    line-height: 1.5;
-    font-weight: bold; }
-  .nav .accordion dd {
-    background-color: #343948;
-    box-shadow: rgba(0, 0, 0, 0.5) 0 1px 2px inset;
-    font-size: 12px;
-    padding: 10px 0 10px 0; }
-    .nav .accordion dd ul li {
-      color: #D8D8D8;
-      padding: 10px 20px 10px 20px; }
-      .nav .accordion dd ul li a {
-        color: #D8D8D8;
-        text-decoration: none; }
-      .nav .accordion dd ul li a:visited {
-        color: #D8D8D8;
-        text-decoration: none; }
-      .nav .accordion dd ul li a:hover {
-        font-weight: bold;
-        color: #fff; }
 
 /*panel*/
 .panel {
@@ -1533,7 +1494,7 @@ input[type="search"]::-webkit-search-decoration {
           top: 6px;
           left: 6px; }
 
-/*tms01page css*/
+/*nav page css*/
 /*accordion開閉用*/
 #acMenu dt {
   display: block;
@@ -1541,3 +1502,48 @@ input[type="search"]::-webkit-search-decoration {
 
 #acMenu dd {
   display: none; }
+
+/*nav*/
+.nav {
+  position: relative;
+  width: 240px;
+  height: 100%;
+  background-color: #262A35;
+  color: #fff;
+  float: left; }
+  .nav .accordion dt {
+    padding: 20px;
+    font-size: 12px;
+    line-height: 1.5;
+    font-weight: bold;
+    position: relative; }
+    .nav .accordion dt:before {
+      content: "";
+      width: 28px;
+      height: 28px;
+      display: inline-block;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-color: #fff;
+      position: absolute;
+      top: 0;
+      left: 0; }
+      .nav .accordion dt:before:nav_edit {
+        background-image: url("../img/"); }
+  .nav .accordion dd {
+    background-color: #343948;
+    box-shadow: rgba(0, 0, 0, 0.5) 0 1px 2px inset;
+    font-size: 12px;
+    padding: 10px 0 10px 0; }
+    .nav .accordion dd ul li {
+      color: #D8D8D8;
+      padding: 10px 20px 10px 20px; }
+      .nav .accordion dd ul li a {
+        color: #D8D8D8;
+        text-decoration: none; }
+      .nav .accordion dd ul li a:visited {
+        color: #D8D8D8;
+        text-decoration: none; }
+      .nav .accordion dd ul li a:hover {
+        font-weight: bold;
+        color: #fff; }

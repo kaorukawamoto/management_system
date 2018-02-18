@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-/*tms01page css*/
+/*nav page css*/
 
 /*accordion開閉用*/
 #acMenu dt{
@@ -10,3 +10,62 @@
 #acMenu dd{
     display:none;
     }
+
+/*nav*/
+.nav{
+	position: relative;
+	width:240px;
+	height:100%;
+	background-color:$nav_color01;
+	color:#fff;
+	float:left;
+	.accordion{
+		dt{
+			padding:20px;
+			font-size: 12px;
+			line-height: 1.5;
+			font-weight: bold;
+			position:relative;
+			&:before{
+				content:"";
+				width:28px;
+				height:28px;
+				display:inline-block;
+				background-repeat:no-repeat;
+				background-size:contain;
+				background-color:#fff;
+				position:absolute;
+				top:0;
+				left:0;
+				&:nav_edit{
+					background-image:url("../img/")
+				}
+
+			}
+		}
+		dd{
+			background-color:$nav_color02;
+			box-shadow:rgba(0,0,0,0.5)0 1px 2px inset;
+			font-size: 12px;
+			padding:10px 0 10px 0;
+			ul{
+				li{
+					color:$nav_color03;
+					padding:10px 20px 10px 20px;
+					a{
+						color:$nav_color03;
+						text-decoration: none;
+					}
+					a:visited{
+						color:$nav_color03;
+						text-decoration: none;
+					}
+					a:hover{
+						font-weight: bold;
+						color:#fff;
+					}
+				}
+			}
+		}
+	}
+}
