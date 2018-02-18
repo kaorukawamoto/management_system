@@ -73,7 +73,7 @@
     		width:50%;
     		&:before{
     			content:"";
-                background-image:url("../img/tms12/Icon/Icon_pen.png");
+                background-image:url("../img/Icon/pen.png");
                 background-repeat:no-repeat;
                 display: inline-block;
                 background-size:contain;
@@ -90,7 +90,7 @@
     		.upload_img{
     			border:1px solid $panel_color06;
     			background-color:rgba(255,255,255,1);
-    			background-image: url("../img/tms12/dragon_b.png");
+    			background-image: url("../img/dragon_b.png");
     			background-repeat:no-repeat;
     			background-size:80%;
     			background-position:center;
@@ -125,7 +125,7 @@
                     }
     			}
     			select{
-    				background-image:url("../img/tms01/Icon_triangle_bottm.png");
+    				background-image:url("../img/Icon/triangle_bottm.png");
 					background-repeat:no-repeat;
 					background-position: 95% 50%;
 					background-size:12px 6px;

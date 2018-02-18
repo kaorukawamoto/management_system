@@ -14,8 +14,8 @@
     margin:auto;
     position:relative;
     top:1.3rem;
-        .Icon_look{
-            background-image:url("../img/tmsSM/icon_look.png");
+        .look{
+            background-image:url("../img/Icon/look.png");
             background-color:transparent!important;
             width:30%;
             height:14px;
@@ -29,8 +29,8 @@
             position:relative;
             bottom:1px;
         }
-        .Icon_edit{
-            background-image:url("../img/tmsSM/icon_edit.png");
+        .edit{
+            background-image:url("../img/Icon/edit_color.png");
             background-color:transparent!important;
             width:50%;
             height:14px;
@@ -116,7 +116,7 @@
             width:50%;
             &:before{
                 content:"";
-                background-image:url("../img/tms12/Icon/Icon_pen.png");
+                background-image:url("../img/Icon/pen.png");
                 background-repeat:no-repeat;
                 display: inline-block;
                 background-size:contain;
@@ -148,7 +148,7 @@
                     }
                 }
                 select{
-                    background-image:url("../img/tms01/Icon_triangle_bottm.png");
+                    background-image:url("../img/Icon/triangle_bottm.png");
                     background-repeat:no-repeat;
                     background-position: 95% 50%;
                     background-size:12px 6px;
@@ -164,7 +164,7 @@
             .upload_img{
                 border:1px solid $panel_color06;
                 background-color:#fff;
-                background-image: url("../img/tmsSM/studium.png");
+                background-image: url("../img/studium.png");
                 background-repeat:no-repeat;
                 background-size:102%;
                 background-position:center;
@@ -198,7 +198,7 @@
                     }
     			}
     			select{
-    				background-image:url("../img/tms01/Icon_triangle_bottm.png");
+    				background-image:url("../img/Icon/triangle_bottm.png");
 					background-repeat:no-repeat;
 					background-position: 95% 50%;
 					background-size:12px 6px;
@@ -285,7 +285,7 @@
                         padding-left:10px;
                         display: inline-block;
                         min-width: 200px;
-                        background-image:url("../img/tms01/Icon_triangle_bottm.png");
+                        background-image:url("../img/Icon/triangle_bottm.png");
                         background-repeat:no-repeat;
                         background-position: 95% 50%;
                         background-size:12px 6px;
