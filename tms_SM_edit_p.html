@@ -25,7 +25,7 @@
 		<ul class="accordion">
 			<li>
 				<dl id="acMenu">
-					<dt>イベント編集</dt>
+					<dt class="nav_edit">イベント編集</dt>
 					<dd class="accordion__list">
 						<ul>
 							<li><a href="">お知らせ</a></li>
@@ -42,7 +42,7 @@
 			</li>
 			<li>
 				<dl id="acMenu">
-					<dt>イベントスケジュール</dt>
+					<dt class="nav_schedule">イベントスケジュール</dt>
 					<dd class="accordion__list">
 						<ul>
 							<li><a href="">項目</a></li>
@@ -59,7 +59,7 @@
 			</li>
 			<li>
 				<dl id="acMenu">
-					<dt>金額設定</dt>
+					<dt class="nav_price">金額設定</dt>
 					<dd class="accordion__list">
 						<ul>
 							<li><a href="">項目</a></li>
@@ -76,7 +76,7 @@
 			</li>
 			<li>
 				<dl id="acMenu">
-					<dt>席情報</dt>
+					<dt class="nav_seat">席情報</dt>
 					<dd class="accordion__list">
 						<ul>
 							<li><a href="">項目</a></li>
@@ -93,7 +93,7 @@
 			</li>
 			<li>
 				<dl id="acMenu">
-					<dt>レポート</dt>
+					<dt class="nav_report">レポート</dt>
 					<dd class="accordion__list">
 						<ul>
 							<li><a href="">項目</a></li>
@@ -315,12 +315,13 @@
     $(function(){
         $("#acMenu dt").on("click", function() {
             $(this).next().slideToggle();
+            $(this).toggleClass("active");
         });
     });
 </script>
 <!--accordion開閉script-->
 
-<!--modal-->
+<!--modal_4-->
 <script>
 $(function(){
     var modal = $('#modal_4'),
@@ -339,7 +340,7 @@ $(function(){
     });
 });
 </script>
-<!--modal-->
+<!--modal_4-->
 
 
 </html>

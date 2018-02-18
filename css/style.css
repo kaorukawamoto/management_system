@@ -1,6 +1,9 @@
 @charset "UTF-8";
 /*common*/
 /*color*/
+/*00 color*/
+/*10 color*/
+/*11 color*/
 /*body*/
 html {
   height: 100%; }
@@ -105,7 +108,7 @@ input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: searchfield-decoration;
   display: inline-block; }
 
-/*toppage css*/
+/*toppage tms_00.html css*/
 .top-bg {
   color: #fff;
   background-image: url("../img/tms00/back.jpg");
@@ -174,7 +177,130 @@ input[type="search"]::-webkit-search-decoration {
     .top-bg .passQuestion:hover {
       color: #fff; }
 
-/*tms01page css*/
+/*nav.html css*/
+/*accordion開閉用*/
+#acMenu dt {
+  display: block;
+  cursor: pointer;
+  color: #D8D8D8; }
+
+#acMenu dd {
+  display: none; }
+
+#acMenu .active {
+  color: #fff; }
+  #acMenu .active:before {
+    background-color: #fff; }
+
+/*navigation*/
+.nav {
+  position: relative;
+  width: 240px;
+  height: 100%;
+  background-color: #262A35;
+  color: #fff;
+  float: left; }
+  .nav .accordion dt {
+    padding: 20px;
+    font-size: 12px;
+    line-height: 1.5;
+    font-weight: bold;
+    position: relative; }
+    .nav .accordion dt:after {
+      content: "";
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 6px 6px 0 6px;
+      border-color: #ffffff transparent transparent transparent;
+      position: absolute;
+      right: 22px;
+      top: 40px; }
+  .nav .accordion .nav_edit:before {
+    content: "";
+    background-image: url("../img/Icon/edit_bg.png");
+    background-color: #D8D8D8;
+    width: 28px;
+    height: 28px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: 28px 28px;
+    position: relative;
+    top: 8px;
+    left: 0px;
+    margin-right: 16px; }
+  .nav .accordion .nav_schedule:before {
+    content: "";
+    background-image: url("../img/Icon/calender_bg.png");
+    background-color: #D8D8D8;
+    width: 28px;
+    height: 28px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: 28px 28px;
+    position: relative;
+    top: 8px;
+    left: 0px;
+    margin-right: 16px; }
+  .nav .accordion .nav_price:before {
+    content: "";
+    background-image: url("../img/Icon/yen_bg.png");
+    background-color: #D8D8D8;
+    width: 28px;
+    height: 28px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: 28px 28px;
+    position: relative;
+    top: 8px;
+    left: 0px;
+    margin-right: 16px; }
+  .nav .accordion .nav_seat:before {
+    content: "";
+    background-image: url("../img/Icon/tickets_bg.png");
+    background-color: #D8D8D8;
+    width: 28px;
+    height: 28px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: 28px 28px;
+    position: relative;
+    top: 8px;
+    left: 0px;
+    margin-right: 16px; }
+  .nav .accordion .nav_report:before {
+    content: "";
+    background-image: url("../img/Icon/about_bg.png");
+    background-color: #D8D8D8;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    position: relative;
+    top: 10px;
+    left: 0px;
+    margin-right: 14px; }
+  .nav .accordion dd {
+    background-color: #343948;
+    box-shadow: rgba(0, 0, 0, 0.5) 0 1px 2px inset;
+    font-size: 12px;
+    padding: 10px 0 10px 0; }
+    .nav .accordion dd ul li {
+      color: #D8D8D8;
+      padding: 10px 20px 10px 20px; }
+      .nav .accordion dd ul li a {
+        color: #D8D8D8;
+        text-decoration: none; }
+      .nav .accordion dd ul li a:visited {
+        color: #D8D8D8;
+        text-decoration: none; }
+      .nav .accordion dd ul li a:hover {
+        font-weight: bold;
+        color: #fff; }
+
+/*tms_10.html　css*/
+/*  このtableスタイルが基本スタイル　*/
 /*Logo*/
 .logoWrap {
   width: 220px;
@@ -499,13 +625,12 @@ input[type="search"]::-webkit-search-decoration {
       color: #637484; }
     .pagelink li a:hover {
       background-color: #E7E7E7; }
-  .pagelink li:first-child {
-    border-left: none; }
   .pagelink li:last-child {
     border-right: 1px solid #E9EBED; }
 
-/*基本テーブルレイアウトのスタイルはtms01.scss使用*/
-/*tms11page css*/
+/*tms_11.html css*/
+/* テーブルスタイルはtms10.scssと同一
+   それ以外の追加styleのみ        */
 /*lightbox(modal)箇所のみ*/
 #modal {
   display: none;
@@ -649,9 +774,10 @@ input[type="search"]::-webkit-search-decoration {
         background-color: #86A0CA;
         color: #fff; }
 
-/*基本テーブルレイアウトのスタイルはtms01.scss使用*/
-/*tms11_2 page css*/
-/*activになった行*/
+/*tms_11_2.html css*/
+/* テーブルスタイルはtms10.scssと同一
+   それ以外の追加styleのみ        */
+/*activになった行のみ*/
 .panel .tablewrap .table #active {
   background: transparent;
   background-color: rgba(164, 198, 134, 0.3); }
@@ -694,9 +820,10 @@ input[type="search"]::-webkit-search-decoration {
   .panel .tablewrap .table #active td:last-child {
     padding: 0 0 0 13px; }
 
-/*基本テーブルレイアウトのスタイルはtms01.scss使用*/
-/*tms11page css*/
-/*lightbox(modal)箇所のみ*/
+/*tms_12.html css*/
+/* テーブルスタイルはtms10.scssと同一
+   それ以外の追加styleのみ        */
+/*lightbox(modal_2)箇所のみ*/
 #modal_2 {
   display: none;
   position: fixed;
@@ -831,8 +958,9 @@ input[type="search"]::-webkit-search-decoration {
         background-color: #73AE9D;
         color: #fff; }
 
-/*基本テーブルレイアウトのスタイルはtms01.scss使用*/
-/*tms12_2 page css*/
+/*tms_12_2.html css*/
+/* テーブルスタイルはtms10.scssと同一
+   それ以外の追加styleのみ        */
 /*newAddになった行*/
 .panel .tablewrap .table .newtable tr:nth-child(n+3):nth-child(odd) {
   background-color: #fff; }
@@ -883,6 +1011,11 @@ input[type="search"]::-webkit-search-decoration {
   .panel .tablewrap .table #newAdd td:last-child {
     padding: 0 0 0 13px; }
 
+/*tms_SM_add.htmlグループ
+    tms_SM_add.html
+    tms_SM_add_p.html   css*/
+/* テーブルスタイルはtms10.scssを基本にし、
+　　このページ固有のstyleを追加　　     */
 /*stm_SM*/
 .studium_check {
   min-width: 60px; }
@@ -902,8 +1035,7 @@ input[type="search"]::-webkit-search-decoration {
       opacity: 1;
       background-color: transparent !important; }
 
-/*tms_SM_add page css*/
-/*lightbox(modal)箇所のみ*/
+/*lightbox(modal_3)箇所のみ*/
 #modal_3 {
   display: none;
   position: fixed;
@@ -1106,6 +1238,11 @@ input[type="search"]::-webkit-search-decoration {
   .panel .tablewrap .table #newAdd_2 td:last-child {
     padding: 0 0 0 13px; }
 
+/*tms_SM_add.htmlグループ
+    tms_SM_edit.html
+    tms_SM_edit_p.html   css*/
+/* テーブルスタイルはtms10.scssを基本にし、
+　　このページ固有のstyleを追加　　     */
 /*stm_SM*/
 .studium_check_2 {
   min-width: 60px;
@@ -1143,8 +1280,7 @@ input[type="search"]::-webkit-search-decoration {
     bottom: 2px;
     border-left: 2px solid #637484; }
 
-/*tms_SM_add page css*/
-/*lightbox(modal)箇所のみ*/
+/*lightbox(modal_4)箇所のみ*/
 #modal_4 {
   display: none;
   position: fixed;
@@ -1345,7 +1481,12 @@ input[type="search"]::-webkit-search-decoration {
   .panel .tablewrap .table #active_2 td:last-child {
     padding: 0 0 0 13px; }
 
-/*page css*/
+/*tms_PM.htmlグループ
+	tms_PM_1_1.html
+	tms_PM_1_1b.html
+	tms_PM_2.html    css*/
+/* テーブルスタイルはtms10.scssを基本にし、
+　　このページ固有のstyleを追加　　     */
 /*tms_PM_1_1*/
 .ticket_select {
   background-image: url("../img/tmsPM/icon_tricircle_bottom.png");
@@ -1493,125 +1634,3 @@ input[type="search"]::-webkit-search-decoration {
           position: absolute;
           top: 6px;
           left: 6px; }
-
-/*nav page css*/
-/*accordion開閉用*/
-#acMenu dt {
-  display: block;
-  cursor: pointer;
-  color: #D8D8D8; }
-
-#acMenu dd {
-  display: none; }
-
-#acMenu .active {
-  color: #fff; }
-  #acMenu .active:before {
-    background-color: #fff; }
-
-/*navigation*/
-.nav {
-  position: relative;
-  width: 240px;
-  height: 100%;
-  background-color: #262A35;
-  color: #fff;
-  float: left; }
-  .nav .accordion dt {
-    padding: 20px;
-    font-size: 12px;
-    line-height: 1.5;
-    font-weight: bold;
-    position: relative; }
-    .nav .accordion dt:after {
-      content: "";
-      width: 0;
-      height: 0;
-      border-style: solid;
-      border-width: 6px 6px 0 6px;
-      border-color: #ffffff transparent transparent transparent;
-      position: absolute;
-      right: 22px;
-      top: 40px; }
-  .nav .accordion .nav_edit:before {
-    content: "";
-    background-image: url("../img/Icon/edit_bg.png");
-    background-color: #D8D8D8;
-    width: 28px;
-    height: 28px;
-    display: inline-block;
-    background-repeat: no-repeat;
-    background-size: 28px 28px;
-    position: relative;
-    top: 8px;
-    left: 0px;
-    margin-right: 16px; }
-  .nav .accordion .nav_schedule:before {
-    content: "";
-    background-image: url("../img/Icon/calender_bg.png");
-    background-color: #D8D8D8;
-    width: 28px;
-    height: 28px;
-    display: inline-block;
-    background-repeat: no-repeat;
-    background-size: 28px 28px;
-    position: relative;
-    top: 8px;
-    left: 0px;
-    margin-right: 16px; }
-  .nav .accordion .nav_price:before {
-    content: "";
-    background-image: url("../img/Icon/yen_bg.png");
-    background-color: #D8D8D8;
-    width: 28px;
-    height: 28px;
-    display: inline-block;
-    background-repeat: no-repeat;
-    background-size: 28px 28px;
-    position: relative;
-    top: 8px;
-    left: 0px;
-    margin-right: 16px; }
-  .nav .accordion .nav_seat:before {
-    content: "";
-    background-image: url("../img/Icon/tickets_bg.png");
-    background-color: #D8D8D8;
-    width: 28px;
-    height: 28px;
-    display: inline-block;
-    background-repeat: no-repeat;
-    background-size: 28px 28px;
-    position: relative;
-    top: 8px;
-    left: 0px;
-    margin-right: 16px; }
-  .nav .accordion .nav_report:before {
-    content: "";
-    background-image: url("../img/Icon/about_bg.png");
-    background-color: #D8D8D8;
-    width: 30px;
-    height: 30px;
-    display: inline-block;
-    background-repeat: no-repeat;
-    background-size: 30px 30px;
-    position: relative;
-    top: 10px;
-    left: 0px;
-    margin-right: 14px; }
-  .nav .accordion dd {
-    background-color: #343948;
-    box-shadow: rgba(0, 0, 0, 0.5) 0 1px 2px inset;
-    font-size: 12px;
-    padding: 10px 0 10px 0; }
-    .nav .accordion dd ul li {
-      color: #D8D8D8;
-      padding: 10px 20px 10px 20px; }
-      .nav .accordion dd ul li a {
-        color: #D8D8D8;
-        text-decoration: none; }
-      .nav .accordion dd ul li a:visited {
-        color: #D8D8D8;
-        text-decoration: none; }
-      .nav .accordion dd ul li a:hover {
-        font-weight: bold;
-        color: #fff; }

@@ -1,12 +1,11 @@
 @charset "utf-8";
 
-/*基本テーブルレイアウトのスタイルはtms01.scss使用*/
+/*tms_12.html css*/
 
-/*tms11page css*/
+/* テーブルスタイルはtms10.scssと同一
+   それ以外の追加styleのみ        */
 
-$modal_color01:#F5F8FA;
-
-/*lightbox(modal)箇所のみ*/
+/*lightbox(modal_2)箇所のみ*/
 #modal_2{
     display: none;
     position: fixed;
