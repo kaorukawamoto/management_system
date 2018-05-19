@@ -1,0 +1,574 @@
+@charset "utf-8";
+
+/*wrap*/
+.dpmv2_wrap{
+    position:relative;
+    height:auto;
+    overflow:hidden;
+    clear:both;
+    background-color:#fff;
+}
+
+/*左白背景領域*/
+.reserve_seat{
+    background-color:#fff;
+    width:100%;
+    height:100%;
+    margin-right:-520px;
+    float:left;
+    overflow:hidden;
+}
+
+/*右グレー背景領域*/
+.field_seat{
+    background-color:$color_glay03;
+    width:38%;
+    height:100%;
+    max-width:520px;
+    float:right;
+    &__head{
+        border-bottom:$color_glay03;
+        padding:1rem 1.5rem;
+        clear:both;
+        position:relative;
+        height:auto;
+        overflow:auto;
+    }
+}
+
+/*左白ヘッダー領域*/
+.select_header{
+    border-bottom:1px solid $color_glay07;
+    height:auto;
+    overflow:hidden;
+    position:relative;
+    padding:1rem 1.5rem;
+    &__left{
+        min-width:260px;
+        width:20%;
+        float:left;
+        height:auto;
+        overflow:hidden;
+        .title_pulldown_v2{
+            font-size:16px;
+            color:#000;
+            font-weight:bold;
+            padding:0.5rem 1rem 0.5rem 0;
+            display:block;
+            float:left;
+            position:relative;
+            &:after{
+                content:"";
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 8px 8px 0 8px;
+                border-color: $color_navy transparent transparent transparent;
+                position:relative;
+                display:inline-block;
+            }
+            select{
+                font-size:inherit;
+                color:inherit;
+                font-weight:inherit;
+            }
+        }
+        .btn{
+            float:left;
+            li{
+                font-size:12px;
+                float:left;
+                padding:0.9rem 0.2rem;
+                a{
+                    text-decoration:none;
+                    color:$panel_color04;
+                }
+                a:hover{
+                    opacity:0.8;
+                    text-decoration:inherit;
+                }
+            }
+        }
+    }
+    &__right{
+        min-width:400px;
+        width:20%;
+        float:left;
+        height:auto;
+        overflow:hidden;
+        li{
+            font-size:12px;
+            font-weight:bold;
+            float:left;
+            display:inline-block;
+            margin:0.5rem 1rem 1rem;
+            min-width:90px;
+            &:before{
+                content:"";
+                width:22px;
+                height:22px;
+                border-radius:8px;
+                display:inline-block;
+                background-color:$color_glay03;
+                margin-right:0.8rem;
+                position:relative;
+                top:0.4rem;
+            }
+        }
+        .common{
+            &:before{
+                background-color:$color_lgreen;
+            }
+        }
+        .cn{
+            &:before{
+                background-color:$color_red;
+            }
+        }
+        .pia{
+            &:before{
+                background-color:$color_orange;
+            }
+        }
+        .seven{
+            &:before{
+                background-color:$color_green;
+            }
+        }
+        .lawson{
+            &:before{
+                background-color:$color_blue02;
+            }
+        }
+    }
+}
+
+/*pulldown_v2menu*/
+.pulldown_v2{
+    border:1px solid $color_glay07;
+    width:240px;
+    height: 40px;
+    float:left;
+    background:#fff;
+    margin-bottom:1rem;
+    &:after{
+        content: "";
+        background:url("../img/Icon/triangle_bottm.png") no-repeat;
+        background-position: 46% 50%;
+        background-size:12px 6px;
+        position:relative;
+        top:-40px;
+        display: block;
+        height: 40px;
+        line-height: 40px;
+        color:$color_glay04;
+        font-size: 12px;
+        margin-left:200px;
+        border-left:1px solid $color_glay07;
+    }
+    select{
+        display: block;
+        width: auto;
+        height: 40px;
+        color:$color_glay04;
+        font-size: 12px;
+        margin-left:12px;
+    }
+    &--left{
+        float:left;
+        width:240px;
+        height:40px;
+        &:after{
+            margin-left:200px;
+        }
+    }
+    &--right{
+        float:right;
+        width:200px;
+        height:40px;
+        position:relative;
+        &:after{
+            margin-left:160px;
+        }
+        p{
+            font-size:12px;
+            color:$panel_color04;
+            position:absolute;
+            bottom:0;
+            width:100%;
+            display:blork;
+            &:after{
+                content:"";
+                background-image:url("../img/Icon/trash_2x.png");
+                background-repeat:no-repeat;
+                background-size:cover;
+                display:block;
+                width:17px;
+                height:26px;
+                position:absolute;
+                right:0;
+                bottom:0;
+            }
+        }
+    }
+}
+
+/*スタジアム画像領域*/
+.studiam_area{
+    padding:1.5rem;
+    &__left{
+        width:auto;
+        float:left;
+    }
+    &__right{
+        width:auto;
+        float:left;
+        padding:0 0 0 1rem;
+    }
+    &__img{
+        dt{
+            display:block;
+            width:240px;
+            height:240px;
+            border:1px solid $color_glay03;
+            margin-bottom:0.5rem;
+        }
+        dd{
+            display:block;
+            width:240px;
+            height:240px;
+            border:1px solid $color_glay03;
+            margin-bottom:0.5rem;
+        }
+    }
+    &__slider{
+        width:100%;
+        height:24px;
+        position:relative;
+        z-index:0;
+        .bar{
+            width:100%;
+            height:4px;
+            line-height:24px;
+            background-color:$nav_color03;
+            position:absolute;
+            top:42%;
+            z-index:1;
+        }
+        .slider{
+            width:8px;
+            height:17px;
+            border-radius:4px;
+            border:1px solid #B4B4B4;
+            background-color:#fff;
+            position:absolute;
+            top:14%;
+            left:60%;
+            z-index:2;
+        }
+        &:before{
+            content:"-";
+            text-align:center;
+            font-size:18px;
+            color:#979797;
+            width:20px;
+            height:20px;
+            border-radius:50%;
+            border:1px solid #979797;
+            background-color:#fff;
+            display:block;
+            position:absolute;
+            left:0;
+            z-index:2;
+        }
+        &:after{
+            content:"+";
+            text-align:center;
+            font-size:18px;
+            color:#979797;
+            width:20px;
+            height:20px;
+            border-radius:50%;
+            border:1px solid #979797;
+            background-color:#fff;
+            display:block;
+            position:absolute;
+            right:0;
+            z-index:2;
+        }
+    }
+}
+
+/*席表*/
+.seating_chart{
+    tr{
+        height:30px;
+        position:relative;
+        height:auto;
+        overflow:hidden;
+        td:not(:first-child){
+            display:inline-block;
+            width:24px;
+            height:24px;
+            background-color:$color_glay03;
+            border-radius:8px;
+            margin:0.2rem;
+        }
+        .common{
+            background-color:$color_lgreen !important;
+        }
+        .cn{
+            background-color:$color_red !important;
+        }
+        .pia{
+            background-color:$color_orange !important;
+        }
+        .seven{
+            background-color:$color_green !important;
+        }
+        .lawson{
+            background-color:$color_blue02 !important;
+        }
+        .column{
+            font-size:12px;
+            width:50px;
+            margin:0 1rem 0 0;
+            vertical-align:middle;
+            background-color:#fff;
+        }
+        &:before{
+            content:"";
+            width:3px;
+            height:20px;
+            display:block;
+            background-color:transparent;
+            position:relative;
+            top:-4px;
+            margin-right:0.3rem;
+        }
+    }
+    .focus{
+        background: -moz-linear-gradient(left, #fff 0%, #E0E0E0 15%, #E0E0E0 15%);
+        background: -webkit-linear-gradient(left, #fff 0%, #E0E0E0 15%, #E0E0E0 15%);
+        background: linear-gradient(to right, #fff 0%, #E0E0E0 15%, #E0E0E0 15%);
+        &:before{
+            background-color:$color_orange;
+        }
+    }
+}
+
+/*右グレーシート表*/
+.field_table{
+    font-size:16px;
+    width:100%;
+    input{
+        border:1px solid $color_glay08;
+        border-radius:3px;
+        background-color:#fff;
+        width:22px;
+        height:22px;
+        position:relative;
+        top:0.4rem;
+    }
+    tr{
+        height:auto;
+        th{
+            font-size:10px;
+            color:$panel_color04;
+            font-weight:bold;
+            position:relative;
+            width:auto;
+            min-width:30px;
+            max-width:180px;
+            padding:10px 0 12px 10px;
+            text-align:left;
+            border-left:1px solid $color_glay07;
+            border-bottom:1px solid $color_glay07;
+            input{
+                background-color:transparent;
+            }
+            &:after{
+                content:"";
+                background-image:url("../img/Icon/triangle_bottm.png");
+                background-repeat:no-repeat;
+                background-size:contain;
+                width:10px;
+                height:10px;
+                display:inline-block;
+                position:absolute;
+                top:60%;
+                right:5%;
+            }
+        }
+        th:last-child{
+            &:after{
+                display:none;
+            }
+        }
+        td{
+            padding:10px 10px 12px 10px;
+            min-width:30px;
+            max-width:180px;
+            border-left:1px solid $color_glay07;
+            .btn{
+                width:62px;
+                height:30px;
+                color:#fff;
+                font-size:14px;
+                line-height:30px;
+                display:block;
+                text-decoration:none;
+                text-align:center;
+                border-radius:1.4px;
+                &:hover{
+                    opacity:0.8;
+                }
+                &--common{
+                    background-color:$color_lgreen;
+                }
+                &--pia{
+                    background-color:$color_orange;
+                }
+                &--lawson{
+                    background-color:$color_blue02;
+                }
+                &--cn{
+                    background-color:$color_red;
+                }
+                &--seven{
+                    background-color:$color_green;
+                }
+            }
+        }
+    }
+}
+
+.clearfix{
+    clear:both;
+}
+
+/*吹き出し箇所*/
+.fukidashiWrap{
+    position:absolute;
+    top:380px;
+    left:820px;
+    .fukidashi{
+        width:250px;
+        height:auto;
+        border-radius:12px;
+        background-color:$nav_color02;
+        color:#fff;
+        box-shadow:2px 0 20px rgba(0,0,0,0.4);
+        &__color{
+            padding:20px 25px;
+            border-radius:12px 12px 0 0;
+            dl{
+                dt{
+                    font-size:24px;
+                    line-height:1.5;
+                    span{
+                        font-size:6px;
+                        margin-left:1rem;
+                    }
+                }
+                dd{
+                    font-size:16px;
+                }
+            }
+            &:before{
+                content:"";
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 0 20px 34.6px 20px;
+                border-color: transparent transparent $nav_color02 transparent;
+                position:absolute;
+                top:-32px;
+            }
+            &--orange{
+                background-color:$color_orange;
+                &:before{
+                    border-color: transparent transparent $color_orange transparent;
+                }
+            }
+            &--blue{
+                background-color:#7F9AC7;
+                &:before{
+                    border-color: transparent transparent #7F9AC7 transparent;
+                }
+            }
+            &--lgreen{
+                background-color:$color_lgreen;
+                &:before{
+                    border-color: transparent transparent $color_lgreen transparent;
+                }
+            }
+            &--green{
+                background-color:$color_green;
+                &:before{
+                    border-color: transparent transparent $color_green transparent;
+                }
+            }
+            &--darkred{
+                background-color:#A87372;
+                &:before{
+                    border-color: transparent transparent #A87372 transparent;
+                }
+            }
+            &--red{
+                background-color:$color_red;
+                &:before{
+                    border-color: transparent transparent $color_red transparent;
+                }
+            }
+            &--palered{
+                background-color:#D59D95;
+                &:before{
+                    border-color: transparent transparent #D59D95 transparent;
+                }
+            }
+            &--glay{
+                background-color:#848A92;
+                &:before{
+                    border-color: transparent transparent #848A92 transparent;
+                }
+            }
+        }
+        &__under{
+            padding:25px 30px;
+            ul{
+                li{
+                    font-size:14px;
+                    line-height:2;
+                }
+                li:first-child{
+                    color:#BEBEBE;
+                }
+            }
+        }
+    }
+    .side_nav{
+        background-color:#fff;
+        border:1px solid $color_glay07;
+        display:block;
+        width:138px;
+        height:178px;
+        padding-top:10px;
+        box-shadow:0 0 10px rgba(0,0,0,0.1);
+        position:absolute;
+        top:-32%;
+        left:105%;
+        ul{
+            li{
+                color:$panel_color04;
+                display:block;
+                padding:0.5rem 1rem;
+                &:hover{
+                    opacity:0.8;
+                    background-color:$color_glay03;
+                }
+            }
+        }
+    }
+}
+

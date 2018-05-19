@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="UTF-8">
+<title></title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--jQuery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<!--jQuery-->
+<link rel="stylesheet" href="css/style.css">
+<link rel="shortcut icon" href="">
+</head>
+
+<body>
+	<div class="nav">
+		<div class="logoWrap">
+			<h1></h1>
+			<p>Tichet Management</p>
+		</div>
+		<ul class="accordion">
+			<li>
+				<dl id="acMenu">
+					<dt class="nav_edit">イベント編集</dt>
+					<dd class="accordion__list">
+						<ul>
+							<li><a href="">お知らせ</a></li>
+							<li><a href="">チーム</a></li>
+							<li><a href="">シリーズ</a></li>
+							<li><a href="">会場/スタジアムマスタ</a></li>
+							<li><a href="">座席/チケットタイプ</a></li>
+							<li><a href="">座席/価格管理</a></li>
+							<li><a href="">顧客管理</a></li>
+							<li><a href="">履歴</a></li>
+						</ul>
+					</dd>
+				</dl>
+			</li>
+			<li>
+				<dl id="acMenu">
+					<dt class="nav_schedule">イベントスケジュール</dt>
+					<dd class="accordion__list">
+						<ul>
+							<li><a href="">項目</a></li>
+							<li><a href="">項目</a></li>
+							<li><a href="">項目</a></li>
+							<li><a href="">項目</a></li>
+							<li><a href="">項目</a></li>
+							<li><a href="">項目</a></li>
+							<li><a href="">項目</a></li>
+							<li><a href="">項目</a></li>
+						</ul>
+					</dd>
+				</dl>
+			</li>
+			<li>
+				<dl id="acMenu">
+					<dt class="nav_price">金額設定</dt>
+					<dd class="accordion__list">
+						<ul>
+							<li><a href="">項目</a></li>
+							<li><a href="">項目</a></li>
+							<li><a href="">項目</a></li>
+							<li><a href="">項目</a></li>
+							<li><a href="">項目</a></li>
+							<li><a href="">項目</a></li>
+							<li><a href="">項目</a></li>
+							<li><a href="">項目</a></li>
+						</ul>
+					</dd>
+				</dl>
+			</li>
+			<li>
+				<dl id="acMenu">
+					<dt class="nav_seat">席情報</dt>
+					<dd class="accordion__list">
+						<ul>
+							<li><a href="">項目</a></li>
+							<li><a href="">項目</a></li>
+							<li><a href="">項目</a></li>
+							<li><a href="">項目</a></li>
+							<li><a href="">項目</a></li>
+							<li><a href="">項目</a></li>
+							<li><a href="">項目</a></li>
+							<li><a href="">項目</a></li>
+						</ul>
+					</dd>
+				</dl>
+			</li>
+			<li>
+				<dl id="acMenu">
+					<dt class="nav_report">レポート</dt>
+					<dd class="accordion__list">
+						<ul>
+							<li><a href="">項目</a></li>
+							<li><a href="">項目</a></li>
+							<li><a href="">項目</a></li>
+							<li><a href="">項目</a></li>
+							<li><a href="">項目</a></li>
+							<li><a href="">項目</a></li>
+							<li><a href="">項目</a></li>
+							<li><a href="">項目</a></li>
+						</ul>
+					</dd>
+				</dl>
+			</li>
+		</ul>
+	</div>
+
+	<div class="panel">
+		<header class="header">
+			<ul>
+				<li><img src="./img/Icon/bell.png" alt="alert"></li>
+				<li><img src="./img/Icon/settings.png" alt="設定"></li>
+			</ul>
+		</header>
+
+		<div class="header2">
+			<h2>分布パターン</h2>
+			<div class="search_window">
+				<span></span><input type="search">
+			</div>
+		</div>
+
+		<div class="dpmv2_wrap">
+			<div class="reserve_seat">
+				<div class="select_header">
+					<div class="select_header__left">
+						<div class="title_pulldown_v2">
+							<select name="example">
+								<option value="">横浜スタジアム</option>
+								<option value="A">A</option>
+								<option value="B">B</option>
+								<option value="C">C</option>
+								<option value="D">D</option>
+								<option value="D">D</option>
+							</select>
+						</div>
+						
+						<ul class="btn">
+							<li><a href="">新規追加</a></li>
+							<li><a href="">編集</a></li>
+						</ul>
+						
+						<div class="pulldown_v2">
+							<select name="example">
+								<option value="">分布パターン履歴</option>
+								<option value="A">A</option>
+								<option value="B">B</option>
+								<option value="C">C</option>
+								<option value="D">D</option>
+								<option value="D">D</option>
+							</select>
+						</div>
+					</div>
+
+					<ul class="select_header__right">
+						<li class="common">共通</li>
+						<li class="cn">CN</li>
+						<li class="pia">ぴあ</li>
+						<li class="seven">7/11</li>
+						<li class="lawson">ローソン</li>
+						<li class="cannotselect">選択不可能席</li>
+					</ul>
+				</div>
+
+				<div class="studiam_area">
+
+					<div class="studiam_area__left">
+
+						<dl class="studiam_area__img">
+							<dt>スタジアム全体画像</dt>
+							<dd>スタジアム座席拡大画像</dd>
+						</dl>
+
+						<div class="studiam_area__slider">
+							<div class="bar"></div>
+							<div class="slider"></div>
+						</div>
+						
+					</div>
+
+					<div class="studiam_area__right">
+
+						<table class="seating_chart">
+							<tr>
+								<td class="column">18列</td>
+								<td></td>
+								<td class="common"></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td class="common"></td>
+								<td class="common"></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr class="focus">
+								<td class="column">19列</td>
+								<td class="pia"></td>
+								<td class="pia"></td>
+								<td class="pia"></td>
+								<td class="pia"></td>
+								<td class="pia"></td>
+								<td class="pia"></td>
+								<td class="pia"></td>
+								<td class="pia"></td>
+								<td class="pia"></td>
+								<td class="pia"></td>
+								<td class="pia"></td>
+								<td class="pia"></td>
+								<td class="pia"></td>
+								<td class="pia"></td>
+							</tr>
+							<tr class="focus">
+								<td class="column">20列</td>
+								<td class="pia"></td>
+								<td class="pia"></td>
+								<td class="pia"></td>
+								<td class="pia"></td>
+								<td class="pia"></td>
+								<td class="pia"></td>
+								<td class="pia"></td>
+								<td class="pia"></td>
+								<td class="pia"></td>
+								<td class="pia"></td>
+								<td class="pia"></td>
+								<td class="pia"></td>
+								<td class="pia"></td>
+								<td class="pia"></td>
+							</tr>
+							<tr>
+								<td class="column">21列</td>
+								<td class="common"></td>
+								<td class="common"></td>
+								<td class="common"></td>
+								<td class="common"></td>
+								<td class="common"></td>
+								<td class="common"></td>
+								<td class="common"></td>
+								<td class="common"></td>
+								<td class="common"></td>
+								<td class="common"></td>
+								<td class="common"></td>
+								<td class="common"></td>
+								<td class="common"></td>
+								<td class="common"></td>
+								<td class="common"></td>
+							</tr>
+							<tr>
+								<td class="column">22列</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td class="column">23列</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td class="column">24列</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td class="column">24列</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td class="column">25列</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td class="column">26列</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td class="column">27列</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td class="column">28列</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td class="column">29列</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td class="column">30列</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td class="column">31列</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+
+			<div class="field_seat">
+				<div class="field_seat__head">
+					<div class="pulldown_v2 pulldown_v2--left">
+						<select name="example">
+							<option value="">配布先</option>
+							<option value="A">A</option>
+							<option value="B">B</option>
+							<option value="C">C</option>
+							<option value="D">D</option>
+							<option value="D">D</option>
+							<option value="E">E</option>
+						</select>
+					</div>
+					<div class="pulldown_v2 pulldown_v2--right">
+						<select name="example">
+							<option value="">Status Filter</option>
+							<option value="A">A</option>
+							<option value="B">B</option>
+							<option value="C">C</option>
+							<option value="D">D</option>
+							<option value="D">D</option>
+							<option value="E">E</option>
+						</select>
+					</div>
+					<div class="pulldown_v2 pulldown_v2--left">
+						<select name="example">
+							<option value="">Status Filter</option>
+							<option value="A">A</option>
+							<option value="B">B</option>
+							<option value="C">C</option>
+							<option value="D">D</option>
+							<option value="D">D</option>
+							<option value="E">E</option>
+						</select>
+					</div>
+					<div class="pulldown_v2--right">
+						<p>選択済みチケット26枚</p>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+
+				<table class="field_table">
+					<tr>
+						<th><input type="checkbox" name="course" value=""></th>
+						<th>座席タイプ</th>
+						<th>階</th>
+						<th>通路</th>
+						<th>列</th>
+						<th>番</th>
+						<th>配分</th>
+					</tr>
+					<tr>
+						<td><input type="checkbox" name="course" value=""></td>
+						<td>フィールドシート</td>
+						<td>2</td>
+						<td>11</td>
+						<td>19</td>
+						<td>124</td>
+						<td><a href="" class="btn btn--common">共通</a></td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" name="course" value=""></td>
+						<td>フィールドシート</td>
+						<td>2</td>
+						<td>12</td>
+						<td>20</td>
+						<td>125</td>
+						<td><a href="" class="btn btn--pia">ぴあ</a></td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" name="course" value=""></td>
+						<td>フィールドシート</td>
+						<td>2</td>
+						<td>12</td>
+						<td>21</td>
+						<td>126</td>
+						<td><a href="" class="btn btn--pia">ぴあ</a></td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" name="course" value=""></td>
+						<td>フィールドシート</td>
+						<td>2</td>
+						<td>11</td>
+						<td>19</td>
+						<td>124</td>
+						<td><a href="" class="btn btn--common">共通</a></td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" name="course" value=""></td>
+						<td>フィールドシート</td>
+						<td>2</td>
+						<td>11</td>
+						<td>22</td>
+						<td>127</td>
+						<td><a href="" class="btn btn--lawson">ローソン</a></td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" name="course" value=""></td>
+						<td>フィールドシート</td>
+						<td>2</td>
+						<td>11</td>
+						<td>19</td>
+						<td>124</td>
+						<td><a href="" class="btn btn--cn">CN</a></td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" name="course" value=""></td>
+						<td>フィールドシート</td>
+						<td>2</td>
+						<td>11</td>
+						<td>19</td>
+						<td>124</td>
+						<td><a href="" class="btn btn--lawson">ローソン</a></td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" name="course" value=""></td>
+						<td>フィールドシート</td>
+						<td>2</td>
+						<td>11</td>
+						<td>19</td>
+						<td>124</td>
+						<td><a href="" class="btn btn--cn">CN</a></td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" name="course" value=""></td>
+						<td>フィールドシート</td>
+						<td>2</td>
+						<td>11</td>
+						<td>19</td>
+						<td>124</td>
+						<td><a href="" class="btn btn--lawson">ローソン</a></td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" name="course" value=""></td>
+						<td>フィールドシート</td>
+						<td>2</td>
+						<td>11</td>
+						<td>19</td>
+						<td>124</td>
+						<td><a href="" class="btn btn--cn">CN</a></td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" name="course" value=""></td>
+						<td>フィールドシート</td>
+						<td>2</td>
+						<td>11</td>
+						<td>19</td>
+						<td>124</td>
+						<td><a href="" class="btn btn--lawson">ローソン</a></td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" name="course" value=""></td>
+						<td>フィールドシート</td>
+						<td>2</td>
+						<td>11</td>
+						<td>19</td>
+						<td>124</td>
+						<td><a href="" class="btn btn--cn">CN</a></td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" name="course" value=""></td>
+						<td>フィールドシート</td>
+						<td>2</td>
+						<td>11</td>
+						<td>19</td>
+						<td>124</td>
+						<td><a href="" class="btn btn--lawson">ローソン</a></td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" name="course" value=""></td>
+						<td>フィールドシート</td>
+						<td>2</td>
+						<td>11</td>
+						<td>19</td>
+						<td>124</td>
+						<td><a href="" class="btn btn--cn">CN</a></td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" name="course" value=""></td>
+						<td>フィールドシート</td>
+						<td>2</td>
+						<td>11</td>
+						<td>19</td>
+						<td>124</td>
+						<td><a href="" class="btn btn--lawson">ローソン</a></td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" name="course" value=""></td>
+						<td>フィールドシート</td>
+						<td>2</td>
+						<td>11</td>
+						<td>19</td>
+						<td>124</td>
+						<td><a href="" class="btn btn--cn">CN</a></td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" name="course" value=""></td>
+						<td>フィールドシート</td>
+						<td>2</td>
+						<td>11</td>
+						<td>19</td>
+						<td>124</td>
+						<td><a href="" class="btn btn--lawson">ローソン</a></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+
+	<!-- 吹き出し箇所 -->
+	<div class="fukidashiWrap">
+		<div class="fukidashi">
+			<div class="fukidashi__color fukidashi__color--orange">
+				<dl>
+					<dt>26枚<span>選択中チケット数</span></dt>
+					<dd>BAY SIDE 内野指定席S</dd>
+				</dl>
+			</div>
+			<div class="fukidashi__under">
+				<ul>
+					<li>配券先</li>
+					<li>共通 0枚</li>
+					<li>CN 0枚</li>
+					<li>ぴあ 26枚</li>
+					<li>7/11 0枚</li>
+					<li>ローソン 0枚</li>
+				</ul>
+			</div>
+		</div>
+		<div class="side_nav">
+			<ul>
+				<li>すべて選択</li>
+				<li>一括解除</li>
+			</ul>
+		</div>
+	</div>
+	<!-- 吹き出し箇所 -->
+
+</body>
+
+<!--accordion開閉scriopt-->
+<script>
+    $(function(){
+        $("#acMenu dt").on("click", function() {
+            $(this).next().slideToggle();
+            $(this).toggleClass("active");
+        });
+    });
+</script>
+<!--accordion開閉script-->
+
+
+</html>
